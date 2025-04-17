@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-link: #5a13b4;
+    --cor-texto: #3B1270;
+    --cor-texto-destaque: #8E35FF;
+    --cor-texto-branco: #ffffff;
+
+    --cor-background-roxo: #3B1270;
+    --cor-background-roxo-claro: #8E35FF;
+
+    --cor-borda: 90, 19, 180;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    padding-top: 1%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-link);
+}
+
+a:hover{
+    color: var(--cor-texto-destaque);
+}
+
+.marginSite{
+    margin: 0 15%;
+}
+
+.alinharDivs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gapDiv{
+    gap: 20%;
+}
+
+.gapDivGradBlog{
+    gap: 15%;
+}
+
+.marginSuperiorMain{
+    margin-top: 10%;
+}
+
+/*Início Cabeçalho*/
+
+.campoBusca{
+    border: 1px solid rgba(var(--cor-borda), 0.2);
+    padding: 2% 4%;
+    min-width: 220px;
+}
+
+input{
+    border: none;
+    outline: none;
+    color: var(--cor-texto);    
+}
+
+input::placeholder{
+    color: var(--cor-texto);
+    opacity: 0.2;
+}
+
+button{
+    border: none;
+    background-color: var(--cor-texto-branco);
+}
+
+.ambienteVirtual{
+    font-weight: 600;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+
+/*Fim Cabeçalho*/
+
+/*Início Apresentação*/
+h1{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cor-texto);
+}
+
+h2{
+    max-width: 940px;
+    font-size: 7rem;
+    font-weight: 400;
+    color: var(--cor-texto);
+}
+
+.textoSubTitulo{
+    max-width: 240px;
+    color: var(--cor-texto);
+    position: relative;
+    bottom: -85px;
+}
+/*Fim Apresentação*/
