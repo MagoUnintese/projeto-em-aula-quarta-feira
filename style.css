@@ -59,6 +59,18 @@ a:hover{
 .corTextoBranco{
     color: var(--cor-texto-branco);
 }
+
+@media screen and (max-width: 1024px){
+    .alinharDivs {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .marginSite {
+        margin: 0 5%;
+    }
+}
 /*Início Cabeçalho*/
 
 .campoBusca{
@@ -91,8 +103,6 @@ button{
     align-items: center;
     gap: 5%;
 }
-
-
 /*Fim Cabeçalho*/
 
 /*Início Apresentação*/
@@ -115,6 +125,31 @@ h2{
     position: relative;
     bottom: -85px;
 }
+
+@media screen and (max-width: 1024px){
+    h2 {
+        font-size: 4rem;
+    }
+
+    .imgSetaAmarela{
+        display: none;
+    }
+
+    .textoSubTitulo {
+        max-width: 435px;
+        position: initial;
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    h1{
+        font-size: 1.15rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+}
 /*Fim Apresentação*/
 
 /*Início Escolha Curso*/
@@ -133,7 +168,7 @@ h2{
 }
 
 .containerInfoEscolhaCurso{
-    padding: 5% 2%;
+    padding: 4% 2%;
 }
 
 .subtituloEscolhaCurso{
@@ -162,4 +197,89 @@ h2{
     width: 17px;
     height: 17px;
 }
+
+.tituloSoftSkills{
+    font-size: 1.2rem;
+}
+
+.tabelaSoftSkills{
+    margin: 4% 0;
+}
+
+.bordaSuperior{
+    border-top: 15px solid transparent;
+}
+
+.bordaDireita{
+    border-right: 50px solid transparent;
+}
+
+@media screen and (max-width: 1024px){
+    .posicaoPersonagem {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .subtituloEscolhaCurso {
+        font-size: 1.5rem;
+    }
+
+    .containerGraduacaoEscolhaCurso {
+        flex-wrap: wrap;
+        min-width: 0;
+        gap: 15px;
+    }
+
+    .alinharBotoes {
+        gap: 10%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .botaoEscolhaCurso {
+        width: 34px;
+        height: 34px;
+    }
+
+    .tamanhoImg{
+        width: 100%;
+        height: auto;
+    }
+}
 /*Fim Escolha Curso*/
+
+/*Inicio Botão Inscrever-se*/
+.botaoInscreverSe{
+    display: block;
+    background-color: var(--cor-background-roxo-claro);
+    color: var(--cor-texto-branco);
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    padding: 2% 0;
+    position: relative;
+    top: -45px;
+    transition: 0.3s;
+}
+
+.botaoInscreverSe:hover{
+    background-color: #5a13b4;
+    color: var(--cor-texto-branco);
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1024px){
+    .botaoInscreverSe {
+        top: -30px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .botaoInscreverSe {
+        top: -15px;
+        font-size: 1.5rem;
+    }
+}
+/*Fim Botão Inscrever-se*/
