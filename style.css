@@ -60,6 +60,13 @@ a:hover{
     color: var(--cor-texto-branco);
 }
 
+h3{
+    font-size: 2rem;
+    color: var(--cor-texto);
+    font-weight: 500;
+    margin: 4% 0 1%;
+}
+
 @media screen and (max-width: 1024px){
     .alinharDivs {
         flex-wrap: wrap;
@@ -71,6 +78,8 @@ a:hover{
         margin: 0 5%;
     }
 }
+
+
 /*Início Cabeçalho*/
 
 .campoBusca{
@@ -283,3 +292,25 @@ h2{
     }
 }
 /*Fim Botão Inscrever-se*/
+
+/*Início Cursos Gratuitos*/
+.botaoCursosGratuitos{
+    transition: 0.3s;
+}
+
+.botaoCursosGratuitos:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 767px){
+    .botaoCursosGratuitos {
+        width: 100%;
+        height: auto;
+    }
+}
+/*Fim Cursos Gratuítos*/
+
+/*Início Blog*/
+
+/*Fim Blog*/
