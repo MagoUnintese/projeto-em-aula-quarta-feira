@@ -5,9 +5,11 @@
     --cor-texto: #3B1270;
     --cor-texto-destaque: #8E35FF;
     --cor-texto-branco: #ffffff;
+    --cor-texto-categoria: #CC7F0B;
 
     --cor-background-roxo: #3B1270;
     --cor-background-roxo-claro: #8E35FF;
+    --cor-background-rodape: #ded0f17e;
 
     --cor-borda: 90, 19, 180;
 }
@@ -64,7 +66,11 @@ h3{
     font-size: 2rem;
     color: var(--cor-texto);
     font-weight: 500;
-    margin: 4% 0 1%;
+    margin: 6% 0 3%;
+}
+
+span{
+    color: var(--cor-texto);
 }
 
 @media screen and (max-width: 1024px){
@@ -312,5 +318,91 @@ h2{
 /*Fim Cursos Gratuítos*/
 
 /*Início Blog*/
+.containerBlog{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+}
 
+.textoDestaque{
+    color: var(--cor-texto-destaque);
+}
+
+.botaoBlog{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 340px;
+}
+
+.botaoBlog > div{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.textoCategoria{
+    color: var(--cor-texto-categoria);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.textoTempoLeitura{
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1024px){
+    .botaoBlog{
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .botaoBlog{
+        width: 100%;
+    }
+
+    .botaoBlog > img {
+        width: 100%;
+    }
+}
 /*Fim Blog*/
+
+/*Início Rodapé*/
+footer{
+    background-color: var(--cor-background-rodape);
+    padding: 3% 0;
+}
+
+.containerRodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.containerRodape > div{
+    width: 160px;
+}
+
+.containerContatos{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 767px){
+    footer{
+        padding: 5% 0;
+    }
+
+    .containerRodape{
+        flex-wrap: wrap;
+    }
+
+    .containerRodape > div{
+        margin: 10%;
+    }
+}
+/*Fim Rodapé*/
